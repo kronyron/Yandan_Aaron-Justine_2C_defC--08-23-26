@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("What is your name? Aaron");
+        Console.WriteLine("How old are you? 19 ");
+        Console.WriteLine("How much money do you have (e.g. 99.99)? 666.6 ");
+        Console.WriteLine("What letter grade did you get in school (e.g. A)? A ");
+        Console.WriteLine("Are you a student? (true/false) true ");
+
+        string name = "Aaron";
+        int age = 19;
+        double price = 300.5; 
+        char grade = 'A';
+        bool isStudent = true; 
+
+        string studentStatusText = isStudent ? "True" : "False";
+
+        Console.WriteLine($"My name is {name}, I am {age} years old, I have ${price} in my pocket, I got a {grade} in school, and it is {studentStatusText} that I am currently a student.");
+    }
+}
